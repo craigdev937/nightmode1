@@ -1,0 +1,44 @@
+.about {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    margin: 0px 6rem;
+}
+
+.about__left {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.about__right {
+    flex: 1;
+    padding-right: 5rem;
+}
+
+.about__card {
+    width: 60%;
+    height: 70vh;
+    border-radius: 30px;
+    overflow: hidden;
+    box-shadow: -8px 8px 2px 2px #333;
+}
+
+.about__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.about__subtitle {
+    margin: 20px 0px;
+    font-size: 18px;
+}
+
+.about__description {
+    font-weight: 300;
+}
+
+
