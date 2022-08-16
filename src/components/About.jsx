@@ -1,16 +1,22 @@
 import React from "react";
 import "./About.css";
 import Andi from "../img/profile.jpg";
+import { Title } from "../components/Title";
+import { ThemeContext } from "../context/Toggle";
 
 const crimson = "#dc143c";
 
 export const About = () => {
+    const theme = React.useContext(ThemeContext);
+    const night = theme.state.nightMode;
+
     return (
         <main>
             <aside className="about">
+                <Title secondary="Who am I?" primary="My Story" />
                 <section className="about__left">
                     <div className="about__card"
-                        // style={{ boxShadow: night && `-8px 8px 2px 2px ${crimson}` }}
+                        style={{ boxShadow: night && `-8px 8px 2px 2px ${crimson}` }}
                     >
                         <img className="about__img" src={Andi} alt="Andi" />
                     </div>

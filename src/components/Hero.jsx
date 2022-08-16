@@ -1,10 +1,14 @@
 import React from "react";
 import "./Hero.css";
 import Andi from "../img/profile.jpg";
+import { ThemeContext } from "../context/Toggle";
 
 export const Hero = () => {
+    const theme = React.useContext(ThemeContext);
+    const night = theme.state.nightMode;
+
     return (
-        <main className="hero" style={{  }}>
+        <main className="hero" style={{ background: night && "#222222" }}>
             <section className="bottom">
                 <svg
                     data-name="Layer 1"
